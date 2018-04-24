@@ -17,6 +17,7 @@ public class WirelessNetwork
 	private Random rand;
 	private int numStations;
 	
+	// Creates a WirelessNetwork object, initiating a thread pool of WirelessStations
 	public WirelessNetwork(int numStations, float[] dataReadyProbs, 
 						   float transmissionTimeWeight, int numPackets,
 						   int logLevel)
@@ -55,6 +56,7 @@ public class WirelessNetwork
 		
 	}
 	
+	// Returns the average total time for the WirelessStations once their tasks are completed
 	public float getAverageTotalTime()
 	{
 		int sum = 0;

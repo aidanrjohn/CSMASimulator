@@ -11,6 +11,7 @@ public class CSMASimulator
 	static StationLogger logger;
 	static int logLevel;
 	
+	// Main method
 	public static void main(String args[])
 	{
 		logLevel = 1;
@@ -25,6 +26,7 @@ public class CSMASimulator
 		System.out.println("Average total time: " + averageTotalTime);
 	}
 	
+	// Prompts the user for running parameters and sets them
 	public static void getParameters()
 	{
 		scanner = new Scanner(System.in);
@@ -58,6 +60,7 @@ public class CSMASimulator
 		System.out.println();
 	}
 	
+	// Creates a WirelessNetwork object to execute WirelessStation tasks asynchronously
 	public static WirelessNetwork createWirelessNetwork(int numStations, float[] dataReadyProbs, 
 			float transmissionTimeWeight, int numPackets, int logLevel)
 	{

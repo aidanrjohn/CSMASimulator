@@ -19,6 +19,7 @@ public class WirelessStation implements Callable
 	private int k;
 	private int W; // congestion window
 	
+	// Creates a WirelessStation object
 	public WirelessStation(WirelessMedium wirelessMedium, String stationName, 
 						   float probDataReady, float transmissionTimeWeight, 
 						   int numPackets, int congestionWindow, int logLevel)
